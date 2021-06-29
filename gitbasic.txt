@@ -26,6 +26,11 @@ ref:https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
 ---------- git fetch <remote>
 ---------- git push <remote> <branch>   : Share the project to remote
 ---------- git remote show <remote>     : Inspecting a Remote
-----------
-----------
-----------
+
+---------------- Tagging ----------------
+Git supports two types of tags: lightweight and annotated.
+Annotated tags are meant for release while lightweight tags are meant for private or temporary object labels.
+The tagging files exsit in .git/refs/tags 
+---------- git tag -l "v1.8.5*"         : List tags with v1.8.5~
+---------- git tag -a "ver." -m "comm"  : Create an annotated tag 
+---------- git tag 
