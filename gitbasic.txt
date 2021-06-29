@@ -1,0 +1,31 @@
+#ref:https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
+
+Untracked   >>>   Unmodified   >>>   Modified   >>>   Staged 
+|-----------------------------------------------------------|
+| >>>>>>>>>>>>>>>>>>>>> Add the file >>>>>>>>>>>>>>>>>>>>>  |
+|                | >>> Edit the file >>> |                  |
+|                |                       | >>>> Stage  >>>> |
+| <<< Remove <<< |                                          |
+|                | <<<<<<<<<<<<<<< Commit <<<<<<<<<<<<<<<<< |
+
+---------- .gitignore                   :  
+A class of files that you don’t want Git to automatically add or even show you as being untracked
+#templates:https://github.com/github/gitignore
+---------- git status                   : Current git status / -s (--short) 
+---------- git diff                     : What you’ve changed but not yet staged
+---------- git diff --staged            : What you’ve staged that will go into your next commit
+---------- git commit -m "comment" -a (automatically staged all the changes) --amend (commit again using the current staged) 
+---------- git log                      : Commit history , detailed information in the following links
+ref:https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+---------- git restore <file>           : Unstage
+---------- git restore --staged <file>  : Unmodify
+
+---------- Working with Remotes ----------
+---------- git remote                   : Show ur remote / -v shows URL
+---------- git remote add <name> <url>  : To add a new remote Git repository as a shortname you can reference easily
+---------- git fetch <remote>
+---------- git push <remote> <branch>   : Share the project to remote
+---------- git remote show <remote>     : Inspecting a Remote
+----------
+----------
+----------
